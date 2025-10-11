@@ -18,17 +18,25 @@
             <img src="Capture d’écran 2025-10-03 093026.png" alt="">
             <div class="texte">
                 <p class="date">3/10/25</p>
-                <p>Je me faisais chier</p>
-                <p>- Lucian</p>
+                <p class="oeuvre">Je me faisais chier</p>
+                <p class="artiste">- Lucian</p>
             </div>
         </div>
         <div class="capsule">
             <div class="texte">
                 <p class="date">10/10/25</p>
-                <p>Tentative de recréer Roméo</p>
-                <p>- Lucian</p>
+                <p class="oeuvre">Tentative de recréer Roméo</p>
+                <p class="artiste">- Lucian</p>
             </div>
             <img src="image.png" alt="">
+        </div>
+        <div class="capsule">
+            <img src="image_2025-10-09_144303522.png" alt="">
+            <div class="texte">
+                <p class="date">10/10/25</p>
+                <p class="oeuvre">IA déstructrive selon Raphaëlle</p>
+                <p class="artiste">- Lucian</p>
+            </div>
         </div>
     </div>
 </body>
@@ -51,14 +59,14 @@
         width: 400%;
         position: absolute;
         z-index: -2;
-        top: -80vw;
+        top: -70vw;
     }
 
     .background{
         width: 100%;
-        height: 120vh;
+        height: 200%;
         position: absolute;
-        top: -1px;
+        top: 14vw;
         z-index: -1;
         margin-top: 30vw;
         background-color: white;
@@ -85,10 +93,20 @@
     }
 
     .capsule > img{
-        height: 50vw;
+        max-height: 50vw;
+        width: 50%;
     }
 
     .date{
         font-style: italic;
+        padding-bottom: 10px;
+    }
+
+    .capsule > .texte > .oeuvre{
+        font-weight:900;
+    }
+
+    .artiste {
+        text-align: end ;
     }
 </style>
