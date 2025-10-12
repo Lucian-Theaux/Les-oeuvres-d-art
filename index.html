@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img class="header" src="/image_2025-10-09_144303522.png" alt="">
+    <div class="background">
+        <h1 class="title">Les Oeuvres d'Art de NSI</h1>
+        <p class="sponso"><i>Sponsorisé par les Bêtises du Code™</i></p>
+        <br>
+        <br>
+        <br>
+        <div class="capsule">
+            <img src="/Capture d’écran 2025-10-03 093026.png" alt="">
+            <div class="texte">
+                <p class="date">3/10/25</p>
+                <p>Je me faisais chier</p>
+                <p>- Lucian</p>
+            </div>
+        </div>
+        <div class="capsule">
+            <div class="texte">
+                <p class="date">10/10/25</p>
+                <p>Tentative de recréer Roméo</p>
+                <p>- Lucian</p>
+            </div>
+            <img src="/image.png" alt="">
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        display: flex;
+        justify-content: center;
+        /* flex-direction:column; */
+        overflow-x: hidden;
+    }
+
+    .header{
+        width: 400%;
+        position: absolute;
+        z-index: -2;
+        top: -80vw;
+    }
+
+    .background{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: -1px;
+        z-index: -1;
+        margin-top: 30vw;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .title{
+        font-size: 7vw;
+    }
+
+    .sponso{
+        font-size: 2.5vw;
+    }
+
+    .capsule{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 4vw 0;
+
+    }
+
+    .capsule > img{
+        height: 50vw;
+    }
+
+    .date{
+        font-style: italic;
+    }
+</style>
