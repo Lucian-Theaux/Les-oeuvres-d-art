@@ -40,6 +40,14 @@
                 <p class="artiste">- Lucian</p>
             </div>
         </div>
+        <div class="capsule reversed">
+            <img src="/Capture d’écran 2025-10-04 à 11.40.59.png" alt="">
+            <div class="texte">
+                <p class="date">04/10/25</p>
+                <p class="oeuvre">Reproduction du logo Billie Eillish avec Turtle</p>
+                <p class="artiste">- Lucian</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
@@ -91,7 +99,7 @@
     .capsule{
         width: 100%;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         padding: 4vw 0;
         flex-direction: row;
     }
@@ -103,6 +111,7 @@
     .capsule > img{
         max-height: 50vw;
         width: 50%;
+        padding: 0 2%;
     }
 
     .date{
@@ -116,6 +125,10 @@
 
     .artiste {
         text-align: end ;
+    }
+
+    .texte{
+        padding: 0 5%;
     }
 
     @media screen and (max-width:500px){
@@ -138,9 +151,9 @@
             padding-bottom: 0;
         }
     }
-    @media screen and (min-width:800px){
+    /* @media screen and (min-width:800px){
         .capsule{
             flex-direction: row;
         }
-    }
+    } */
 </style>
