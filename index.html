@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
     <link rel="icon" href="image.png">
     <title>Les Oeuvres d'Art de NSI</title>
 </head>
+
 <body>
     <img class="header" src="image_2025-10-09_144303522.png" alt="">
     <div class="background">
@@ -23,13 +24,13 @@
                 <p class="artiste">- Lucian</p>
             </div>
         </div>
-        <div class="capsule">
+        <div class="capsule reversed">
+            <img src="image.png" alt="">
             <div class="texte">
                 <p class="date">10/10/25</p>
                 <p class="oeuvre">Tentative de recréer Roméo</p>
                 <p class="artiste">- Lucian</p>
             </div>
-            <img src="image.png" alt="">
         </div>
         <div class="capsule">
             <img src="image_2025-10-09_144303522.png" alt="">
@@ -61,6 +62,7 @@
         position: absolute;
         z-index: -2;
         top: -70vw;
+        overflow-x: hidden;
     }
 
     .background{
@@ -75,6 +77,7 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
+        overflow-x: hidden;
     }
 
     .title{
@@ -90,7 +93,11 @@
         display: flex;
         justify-content: space-evenly;
         padding: 4vw 0;
+        flex-direction: row;
+    }
 
+    .reversed{
+        flex-direction: row-reverse;
     }
 
     .capsule > img{
@@ -109,5 +116,31 @@
 
     .artiste {
         text-align: end ;
+    }
+
+    @media screen and (max-width:500px){
+        body{
+            overflow-x:hidden;
+        }
+
+        .capsule{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .capsule > img {
+            max-height: 70vw;
+            width: 70%;
+        }
+
+        .date {
+            padding-top: 10px;
+            padding-bottom: 0;
+        }
+    }
+    @media screen and (min-width:800px){
+        .capsule{
+            flex-direction: row;
+        }
     }
 </style>
